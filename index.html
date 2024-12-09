@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is your page title & meta description, used in the browser tab and search engines -->
+        <title>KE6 Vanguard Home Page</title>
+        <meta name="description" content="KE6 Vanguard's Offical Esport Website">
+        
+        <!-- This tells the browser to support UTF-8 encoding -->
+        <meta charset="utf-8">
+
+        <!-- This makes the website "responsive", so that it shifts how it looks on different devices, e.g. desktop, mobiles, tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- This is how you include a CSS stylesheet. You put the URL of the stylesheet in the "href" attribute -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("aboutbutton").addEventListener("click", function () {
+                    document.getElementById("abouttext").classList.toggle("h-24").toggle('h-0');
+                });
+
+
+                document.getElementById("historybutton").addEventListener("click", function () {
+                    document.getElementById("historytext").classList.toggle("h-24").toggle('h-0');
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <!-- This is the top navigation bar -->
+        <header class="px-4 bg-gradient-to-t from-[#242424] to-[#1b4f52] fixed w-full">
+            <!--
+            
+            flex = Use the flexbox layouts
+            justify-start = position everything at the start (left)
+            justify-end = position everything at the end (right)
+            justify-around = make everything have the same space before and after in the line
+            justify-between = make everything separated by a space
+
+            flex-col = position everything inside this element in a column instead of a row
+
+            gap-4 = amount of gap between each element
+
+
+            -->
+            <div class="flex justify-between items-end py-4">
+                <a href="index.html"><img class="h-20" src="./assets/images/logo.png"/></a>
+                <nav class=" ml-auto text-white text-sm font-semibold tracking-widest flex flex-row-reverse justify-start gap-7">
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="index.html">HOME <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="teams.html">TEAMS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="tournaments.html">TOURNAMENTS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="info.html">INFO <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="enquiryform.html">ENQUIRY FORM <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="contacts.html">CONTACTS <span>></span></a>
+                </nav>
+            </div>
+        </header>
+
+
+        <!--This is everything else on page-->
+        <div class="pt-10 px-2 md:px-12 h-screen bg-gradient-to-t from-[#242424] to-[#1b4f52] flex flex-col-reverse lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 text-white">
+                <div class="mb-10">
+                    <p class="h-10 bg-white aspect-square bg-gradient-to-t from-white to-[#1b4f52] -rotate-45"></p>
+                    <h1 class="text-7xl mb-4 tracking-widest">VANGUARD</h1>
+                    <p class="uppercase text-lg tracking-wider">King edward vi college Esports Team</p>
+                </div>
+
+                <p class=""><a class="w-60 flex justify-between hover:bg-white hover:text-teal-600 border border-solid p-2 transtion-colors duration-500 cursor-pointer" id="aboutbutton">ABOUT US <span>></span></a></p>
+                <p class="h-0 overflow-hidden transtion-all duration-500 mt-2" id="abouttext">KE6 Vanguard is the personal Esports team of King Edward VI College We compete in British Esports under
+                    Student Championship Competitors in League, Valorant, Rocket League & Overwatch 2 Face The Sword!</p>
+
+                <p class="mt-4 lg:mt-24"><a class="w-60 flex justify-between hover:bg-white hover:text-teal-600 border border-solid p-2 transtion-colors duration-500 cursor-pointer" id="historybutton">HISTORY <span>></span></a></p>
+                <p class="h-0 overflow-hidden transtion-all duration-500 mt-2" id="historytext"> Ke6 Vanguard was established as the team on the Esports course back in 2022 by first year students of Esports at KE6. Has teams in League of Legends, VALORANT, Rocket League and Overwatch 2. Since then the team has claimed countless victories for the college showcasing themselves as a fierce competitor within the industry and
+                    is now a part of the KE6 Sports Performance Academy, offering students expert guidance into competitive grassroots esports.</p>
+            </div>
+
+            <div class="w-full lg:w-1/2 text-center">
+                <img class="max-w-[250px] mx-auto lg:max-w-full" src="./assets/images/logo.png"/>
+            </div>
+        </div>
+    </body>
+</html>

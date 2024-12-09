@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is your page title & meta description, used in the browser tab and search engines -->
+        <title>KE6 Vanguard Contacts Page</title>
+        <meta name="description" content="KE6 Vanguard's Offical Esport Website">
+        
+        <!-- This tells the browser to support UTF-8 encoding -->
+        <meta charset="utf-8">
+
+        <!-- This makes the website "responsive", so that it shifts how it looks on different devices, e.g. desktop, mobiles, tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- This is how you include a CSS stylesheet. You put the URL of the stylesheet in the "href" attribute -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- This is the top navigation bar -->
+        <header class="px-4 bg-gradient-to-t from-[#242424] to-[#1b4f52] fixed w-full">
+            <!--
+            
+            flex = Use the flexbox layout
+            justify-start = position everything at the start (left)
+            justify-end = position everything at the end (right)
+            justify-around = make everything have the same space before and after in the line
+            justify-between = make everything separated by a space
+
+            flex-col = position everything inside this element in a column instead of a row
+
+            gap-4 = amount of gap between each element
+
+
+            -->
+            <div class="flex justify-between items-end py-4">
+                <a href="index.html"><img class="h-20" src="./assets/images/logo.png"/></a>
+                <nav class=" ml-auto text-white text-sm font-semibold tracking-widest flex flex-row-reverse justify-start gap-7">
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="index.html">HOME <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="teams.html">TEAMS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="tournaments.html">TOURNAMENTS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="info.html">INFO <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="enquiryform.html">ENQUIRY FORM <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="contacts.html">CONTACTS <span>></span></a>
+                </nav>
+            </div>
+        </header>
+
+
+        <!--Page Content-->
+        <div class="pt-32 px-12 min-h-screen bg-gradient-to-t from-[#242424] to-[#1b4f52] text-white">
+                <h1 class="text-7xl font-semibold px-12 pt-6">Contact Us</h1>
+            
+                <!--Images-->
+                <div>
+                    <div class="flex items-center gap-12 mt-10 ml-10">
+                        <img class="h-32" src="./assets/images/email.png"/>
+                        <p class="flex flex-col gap-4 font-semibold">
+                            <a class="hover:underline" href="mailto:joe.cox@ke6n.ac.uk">Joe.Cox@ke6n.ac.uk</a>
+                            <a class="hover:underline" href="mailto:jack.finch@ke6n.ac.uk">Jack.Finch@ke6n.ac.uk</a>
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-12">
+                        <img class="h-32 mt-10 ml-10" src="./assets/images/YouTube2.svg"/>
+                        <p class="font-semibold">
+                            <a class="hover:underline" href="https://www.youtube.com/@ke6vanguard98">@ke6vanguard98</a>
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-12">
+                        <img class="h-32 mt-10 ml-10" src="./assets/images/x.jpg"/>
+                        <p class="font-semibold">
+                            <a class="hover:underline" href="https://x.com/ke6vanguard">@KE6Vanguard</a>
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-12">
+                        <img class="h-32 mt-10 ml-10" src="./assets/images/twitch2png.png"/>
+                        <p class="font-semibold">
+                            <a class="hover:underline" href="https://www.twitch.tv/ke6vanguard">KE6Vanguard</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </body>
+    </html>

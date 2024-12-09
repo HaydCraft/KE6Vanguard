@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is your page title & meta description, used in the browser tab and search engines -->
+        <title>KE6 Vanguard Team Page</title>
+        <meta name="description" content="KE6 Vanguard's Offical Esport Website">
+        
+        <!-- This tells the browser to support UTF-8 encoding -->
+        <meta charset="utf-8">
+
+        <!-- This makes the website "responsive", so that it shifts how it looks on different devices, e.g. desktop, mobiles, tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- This is how you include a CSS stylesheet. You put the URL of the stylesheet in the "href" attribute -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+        <!-- This is the top navigation bar -->
+        <header class="px-4 bg-gradient-to-t from-[#242424] to-[#1b4f52] fixed w-full z-[1001]">
+            <!--
+            
+            flex = Use the flexbox layout
+            justify-start = position everything at the start (left)
+            justify-end = position everything at the end (right)
+            justify-around = make everything have the same space before and after in the line
+            justify-between = make everything separated by a space
+
+            flex-col = position everything inside this element in a column instead of a row
+
+            gap-4 = amount of gap between each element
+
+
+            -->
+            <div class="flex justify-between items-end py-4">
+                <a href="index.html"><img class="h-20" src="./assets/images/logo.png"/></a>
+                <nav class=" ml-auto text-white text-sm font-semibold tracking-widest flex flex-row-reverse justify-start gap-7">
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="index.html">HOME <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="teams.html">TEAMS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="tournaments.html">TOURNAMENTS <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="info.html">INFO <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="enquiryform.html">ENQUIRY FORM <span>></span></a>
+                    <a class="flex gap-2 hover:text-teal-600 transtion-colors duration-500" href="contacts.html">CONTACTS <span>></span></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- <div class="h-screen pt-28 flex flex-col md:flex-row justify-start items-start"> -->
+        <div class="owl-carousel h-screen pt-28 -left-1">
+            <div class="w-full h-full group val-bg-image bg-no-repeat flex flex-col items-center justify-end overflow-hidden">
+                <div class="w-full mb-auto flex flex-col items-center pt-12">
+                    <img class="max-w-[200px] lg:max-w-[300px] mx-auto brightness-[10]" src="./assets/images/Valorant-Logo.png"/>
+                </div>
+                <div class="h-0 group-hover:h-full lg:group-hover:h-2/5 bg-black bg-opacity-50 w-full opacity-0 group-hover:opacity-100 p-8 transtion-all duration-500">
+                    <h4 class="text-white font-bold text-lg lg:text-xl mb-2">KE6 Vanguard Valorant</h4>
+                    <p class="text-white text-sm lg:text-base">This team has 5 players and 2 subs lead valiantly by the two coaches we have gained numerous wins and our track record can be found here</p>
+                    <a class="inline-block bg-teal-400 hover:bg-teal-600 transtion-colors duration-500 p-2 px-4 rounded-lg mt-3" href="https://champs.britishesports.org/tournaments/val-sc-open-23-24/teams/ke6v--valorant/matches" target="_blank">View Valorant Team</a>
+                </div>
+            </div>
+
+            <div class="w-full h-full group league-bg-image bg-no-repeat flex flex-col items-center justify-end overflow-hidden">
+                <div class="w-full mb-auto flex flex-col items-center pt-12">
+                    <img class="max-w-[200px] lg:max-w-[300px] mx-auto" src="./assets/images/lollog.png"/>
+                </div>
+                <div class="h-0 group-hover:h-full lg:group-hover:h-2/5 bg-black bg-opacity-50 w-full opacity-0 group-hover:opacity-100 p-8 transtion-all duration-500">
+                    <h4 class="text-white font-bold text-lg lg:text-xl mb-2">KE6 Vanguard League of legends</h4>
+                    <p class="text-white text-sm lg:text-base">This team has 5 main players competing in the British Esports Student Champs. A track record of matches can be found here.</p>
+                    <a class="inline-block bg-teal-400 hover:bg-teal-600 transtion-colors duration-500 p-2 px-4 rounded-lg mt-3" href="https://champs.britishesports.org/tournaments/lol-22-23/teams/ke6-vanguard/matches" target="_blank">View League of Legends Team</a>
+                </div>
+            </div>
+
+            <div class="w-full h-full group rocket-bg-image bg-no-repeat flex flex-col items-center justify-end overflow-hidden">
+                <div class="w-full mb-auto flex flex-col items-center pt-12">
+                    <img class="max-w-[200px] lg:max-w-[300px] mx-auto" src="./assets/images/rllogo.png"/>
+                </div>
+                <div class="h-0 group-hover:h-full lg:group-hover:h-2/5 bg-black bg-opacity-50 w-full opacity-0 group-hover:opacity-100 p-8 transtion-all duration-500">
+                    <h4 class="text-white font-bold text-lg lg:text-xl mb-2">KE6 Vanguard Rocket League</h4>
+                    <p class="text-white text-sm lg:text-base">This team has 3 players and two subs and a great track record of victory. Match history can be found here.
+                        turn found here into link</p>
+                    <a class="inline-block bg-teal-400 hover:bg-teal-600 transtion-colors duration-500 p-2 px-4 rounded-lg mt-3" href="https://champs.britishesports.org/tournaments/rl-22-23/teams/ke6-vanguard/matches" target="_blank">View Rocket League Team</a>
+                </div>
+            </div>
+
+            <div class="w-full h-full group ow-bg-image bg-no-repeat flex flex-col items-center justify-end overflow-hidden">
+                <div class="w-full mb-auto flex flex-col items-center pt-12">
+                    <img class="max-w-[200px] lg:max-w-[300px] mx-auto" src="./assets/images/owlogo.png"/>
+                </div>
+                <div class="h-0 group-hover:h-full lg:group-hover:h-2/5 bg-black bg-opacity-50 w-full opacity-0 group-hover:opacity-100 p-8 transtion-all duration-500">
+                    <h4 class="text-white font-bold text-lg lg:text-xl mb-2">KE6 Vanguard Overwatch</h4>
+                    <p class="text-white text-sm lg:text-base">This team has 3 players and two subs and a great track record of victory. Match history can be found here.</p>
+                    <a class="inline-block bg-teal-400 hover:bg-teal-600 transtion-colors duration-500 p-2 px-4 rounded-lg mt-3" href="https://champs.britishesports.org/tournaments/ow2-sc-nationals-23-24/teams/ke6v--ow2n/matches" target="_blank">View Overwatch Team</a>
+                </div>
+            </div>
+
+            <div class="w-full h-full group fifa-bg-image bg-no-repeat flex flex-col items-center justify-end overflow-hidden">
+                <div class="w-full mb-auto flex flex-col items-center pt-12">
+                    <img class="max-w-[200px] lg:max-w-[300px] mx-auto" src="./assets/images/fifa logo.png"/>
+                </div>
+                <div class="h-0 group-hover:h-full lg:group-hover:h-2/5 bg-black bg-opacity-50 w-full opacity-0 group-hover:opacity-100 p-8 transtion-all duration-500">
+                    <h4 class="text-white font-bold text-lg lg:text-xl mb-2">KE6 Vanguard FIFA</h4>
+                    <p class="text-white text-sm lg:text-base">Place holder text about the video game Fifa</p>
+                    <a class="inline-block bg-teal-400 hover:bg-teal-600 transtion-colors duration-500 p-2 px-4 rounded-lg mt-3" href="https://champs.britishesports.org/tournaments/ow2-sc-nationals-23-24/teams/ke6v--ow2n/matches" target="_blank">View Fifa Team</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/teams.js"></script>
+    </body>
+</html>

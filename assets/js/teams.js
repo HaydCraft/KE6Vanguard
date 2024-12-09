@@ -1,0 +1,22 @@
+$( document ).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayHoverPause:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            768:{
+                items:3,
+            }
+        }
+    })
+});
